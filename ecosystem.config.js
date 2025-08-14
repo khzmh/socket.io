@@ -15,7 +15,7 @@ module.exports = {
       
       // Environment
       env: {
-        NODE_ENV: 'development',
+        NODE_ENV: 'production',
         PORT: 8080
       },
       env_production: {
@@ -66,7 +66,7 @@ module.exports = {
       pmx: false,
       
       // Environment variables
-      env_file: '.env',
+      //env_file: '.env',
       
       // Graceful shutdown
       kill_retry_time: 100,
@@ -85,7 +85,7 @@ module.exports = {
       user: 'node',
       host: 'wbs.zeabur.app',
       ref: 'origin/main',
-      repo: 'git@github.com:username/hafiportrait-socketio.git',
+      repo: 'git@github.com:khzmh/socket.io.git',
       path: '/var/www/production',
       'post-deploy': 'npm install && pm2 reload ecosystem.config.js --env production'
     }
