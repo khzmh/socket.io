@@ -14,7 +14,10 @@
     "pm2:restart": "pm2 restart all",
     "pm2:logs": "pm2 logs",
     "pm2:monit": "pm2 monit",
-    "debug:env": "node debug-env.js"
+    "pm2:simple": "pm2-runtime start ecosystem.simple.js",
+    "debug:env": "node debug-env.js",
+    "debug:startup": "node debug-startup.js --debug-only",
+    "debug:full": "node debug-startup.js"
   },
   "keywords": [
     "socketio",
